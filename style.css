@@ -145,3 +145,58 @@ footer {
 .passwordloginwhole {
     margin-right: 33px;
 }
+
+.profilepic {
+    width: 325px;
+    float: left;
+    margin-left: 60px;
+    border: solid 3px white;
+}
+
+.profilebody {
+    height: 330px;
+    width: 900px;
+    background-color: #949494;
+    margin-left: 250px;
+    padding-top: 20px;
+    
+}
+
+.intro {
+    width: 400px;
+    float: right;
+    margin-top: -20px;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.bottomhalf {
+    height: 450px;
+    width: 900px;
+    background-color: #949494;
+    margin-left: 250px;
+}
+
+.aboutmeandbio {
+    margin-left: 60px;
+    margin-right: 70px;
+    height: 200px;
+}
+
+.grouprequests {
+    margin-left: 160px;
+    float: left;
+    padding-right: 160px;
+
+}
+
+.currentgroups {
+    margin-right: -20px;
+}
+
+button {
+    border-radius: 25px;
+    margin-left: 10px;
+}
