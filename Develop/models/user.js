@@ -33,7 +33,7 @@ module.exports = function(sequelize, DataTypes) {
     prefs: {type: DataTypes.STRING},
     bio: {type: DataTypes.STRING}
   });
-  accData.belongsTo(User);
+  accData.belongsTo(User, {onDelete: "CASCADE"});
 
   var groups = sequelize.define("groups", {
     name: {
@@ -60,5 +60,5 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     }
   });
-  events.hasMany(groups, {onDelete: "CASCADE"});
+  events.hasMany(groups, {as: 'Groups', onDelete: "CASCADE"});
 };
