@@ -41,6 +41,7 @@ module.exports = function(app) {
     //BIG NOTE: BELONGSTO IS WEIRD SO I DON'T KNOW IF THIS IS RIGHT OR WHAT
     app.post("/api/groups/:id", function(req, res){
         db.groups.addUsers([req.params.id, req.body])
+            .then(db.User.addgroups([req.body, req.params.id]))
             .then(dbgroups=>{
                 res.json(dbgroups);
             });
