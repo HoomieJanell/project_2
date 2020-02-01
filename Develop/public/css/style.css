@@ -1,0 +1,122 @@
+footer {
+    width: 100.7%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 80px;
+    padding-top: 15px;
+}
+
+.header {
+    background-image: url('wood2.png');
+    height: 180px;
+    margin-top: -5px;
+    margin-right: -10px;
+    margin-left: -10px;
+    padding-bottom: 50px;
+}
+
+.cassette {
+    width: 100px;
+}
+
+#searchbar {
+    margin-top: 85px;
+    margin-left: 37px;
+    width: 250px;
+    height: 23px;
+    float: left;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    border: white 1px solid;
+  
+}
+
+.searchbutton {
+    margin-top: 87px;
+    margin-left: 30px;
+    width: 75px;
+    margin-left: 5px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.title {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.my {
+    margin-top: -50px;
+    margin-right: 518px;
+    font-size: 55px;
+}
+
+#my {
+    margin-bottom: 60px;
+}
+
+.z {
+    margin-left: -30px;
+    margin-top: -140px;
+    font-size: 55px;
+    margin-right: 105px;
+}
+
+.cassette {
+    margin-top: -150px;
+    margin-bottom: 40px;
+    width: 150px;
+}
+
+.navbar {
+    float: right;
+    margin-right: 40px;
+    margin-top: -80px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('diagonal_striped_brick.png');
+}
+
+.container {
+    background-color: #949494;
+    padding-bottom: 20px;
+    width: 800px;
+}
+
+#rightside {
+    margin-right: -75px;
+    margin-left: 40px;
+}
+
+.fullpage {
+    font-family: 'Righteous', cursive, 'Acme', sans-serif;
+}
+
+.concertname {
+    color: white;
+}
+
+.card {
+    background-color: black;
+}
+
+.ticketslink {
+    color: white;
+    text-decoration: underline;
+}
+
+#eventscards {
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
