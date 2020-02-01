@@ -30,10 +30,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     // these are gonna be weird to actually use
-    prefs: Sequelize.STRING,
-    bio: Sequelize.STRING
+    prefs: {type: DataTypes.STRING},
+    bio: {type: DataTypes.STRING}
   });
-  accData.belongsTo(User);
+  accData.belongsTo(User, {onDelete: "CASCADE"});
 
   var groups = sequelize.define("groups", {
     name: {
@@ -49,7 +49,16 @@ module.exports = function(sequelize, DataTypes) {
     event: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    genre: {
+      type: DataTypes.STRING,
+    },
+    date: {
+      type: DataTypes.STRING
+    },
+    imagelink: {
+      type: DataTypes.STRING
     }
   });
-  events.hasMany(groups, {onDelete: "CASCADE"});
+  events.hasMany(groups, {as: 'Groups', onDelete: "CASCADE"});
 };
