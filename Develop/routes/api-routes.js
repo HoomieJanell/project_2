@@ -1,5 +1,5 @@
-// var db = require("../models");
+var db = require("../models");
 
-// module.exports = app=>{
+module.exports = app=>{
     
-// }
+}
