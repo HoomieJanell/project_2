@@ -30,8 +30,8 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     // these are gonna be weird to actually use
-    prefs: Sequelize.STRING,
-    bio: Sequelize.STRING
+    prefs: {type: DataTypes.STRING},
+    bio: {type: DataTypes.STRING}
   });
   accData.belongsTo(User);
 
