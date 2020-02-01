@@ -37,6 +37,15 @@ module.exports = function(app) {
         });
     });
 
+    //add user to group
+    //BIG NOTE: BELONGSTO IS WEIRD SO I DON'T KNOW IF THIS IS RIGHT OR WHAT
+    app.post("/api/groups/:id", function(req, res){
+        db.groups.addUsers([req.params.id, req.body])
+            .then(dbgroups=>{
+                res.json(dbgroups);
+            });
+    });
+
     //delete selected group ("I want to delete my group")
     app.delete("/api/groups/:id", function(req, res){
         db.groups.destroy({
@@ -51,7 +60,13 @@ module.exports = function(app) {
     //delete all groups ("the event is over, remove all its groups")
     app.delete("api/groups/:eventid", function(req, res){
         db.groups.destroy({
-            where:
-        })
-    })
+            where: {
+                event_id: req.params.eventid
+            }
+        }).then(dbgroups=>{
+            res.json(dbgroups);
+        });
+    });
+
+
 }
