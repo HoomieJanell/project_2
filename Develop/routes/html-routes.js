@@ -14,7 +14,7 @@ module.exports = function(app) {
 
   // index route loads index.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "../../index.html"));
   });
 
   // concerts route loads concerts.html
