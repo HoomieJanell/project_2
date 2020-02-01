@@ -1,0 +1,143 @@
+.header {
+    background-image: url('../images/wood2.png');
+    height: 150px;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    
+}
+
+.searchbar {
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 250px;
+    height: 20px;
+    float: left;
+    border-radius: 25px;
+}
+
+.searchbutton {
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 75px;
+    margin-left: 5px;
+    height: 27px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+}
+
+.title {
+    text-align: center; 
+    margin-bottom: -100px;   
+}
+
+.cassette {   
+    height: 100px; 
+    
+
+}
+
+.my {
+    margin-top: -40px;
+    margin-right: 515px;
+    font-size: 50px;
+}
+
+#my {
+    margin-bottom: 60px;
+}
+
+.z {
+    margin-left: -30px;
+    margin-top: -140px;
+    font-size: 50px;
+    margin-right: 98px;
+
+}
+
+.nav {
+    float: right;
+    margin-right: 30px;
+    margin-top: -80px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 80px;
+    padding-right: 20px;
+    margin-left: -10px;
+    padding-top: 25px;
+}
+
+.container {
+    width: 500px;
+    height: 465px;
+    text-align: center;
+    background-color: #949494;
+    margin-left: 450px;
+    padding-top: 20px;
+}
+
+.copyright {
+    margin-bottom: -50px;
+}
+
+.emailtext, .passwordtext {
+    font-size: 25px;
+}
+
+.emailinput, .passwordinput {
+    height: 20px;
+}
+
+.login {
+    margin-bottom: 55px;
+    margin-top: 30px;
+}
+
+.content {
+    background-image: url('../images/diagonal_striped_brick.png')
+}
+
+.here {
+    color: black;
+    font-size: 25px;
+    margin-top: -20px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-right: -140px;
+}
+
+.dont {
+    margin-bottom: -30px;
+}
+
+.loginbelow {
+    margin-top: -30px;
+}
+
+.submitlogin {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    height: 20px;
+    
+}
+
+.emailloginwhole {
+   margin-bottom: 10px;
+}
+
+.passwordloginwhole {
+    margin-right: 33px;
+}
