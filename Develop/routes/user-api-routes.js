@@ -14,12 +14,14 @@ module.exports = app=>{
         });
     });
 
+    // create a new user
     app.post("/api/User", (req,res)=>{
         db.User.create(req.body).then((dbUser)=>{
             res.json(dbUser);
         });
     });
 
+    // delete a user account, not sure how much use this'll get though.
     app.delete("/api/User/:id", (req, res)=>{
         db.User.destroy({
             where: {

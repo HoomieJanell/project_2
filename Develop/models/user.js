@@ -49,6 +49,15 @@ module.exports = function(sequelize, DataTypes) {
     event: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    genre: {
+      type: DataTypes.STRING,
+    },
+    date: {
+      type: DataTypes.STRING
+    },
+    imagelink: {
+      type: DataTypes.STRING
     }
   });
   events.hasMany(groups, {onDelete: "CASCADE"});
