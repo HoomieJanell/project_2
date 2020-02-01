@@ -13,7 +13,7 @@ module.exports = function(app){
     app.get("/api/account/:id", function(req, res){
         db.accData.findOne({
             where: {
-                User_id: req.params.id
+                UserId: req.params.id
             }
         }).then(dbaccount=>{
             res.json(dbaccount);
@@ -25,7 +25,7 @@ module.exports = function(app){
         db.accData.update(req.body,
             {
                 where: {
-                    User_id: req.params.id
+                    UserId: req.params.id
                 }
             }).then(dbaccount=>{
                 res.json(dbaccount);
