@@ -98,7 +98,7 @@ body {
     margin-left: 40px;
 }
 
-#fullpage {
+.fullpage {
     font-family: 'Righteous', cursive, 'Acme', sans-serif;
 }
 
@@ -113,4 +113,10 @@ body {
 .ticketslink {
     color: white;
     text-decoration: underline;
+}
+
+#eventscards {
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
