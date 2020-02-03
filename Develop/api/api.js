@@ -28,14 +28,9 @@ $.ajax({
                 var eventTime = events[i].dates.start.localTime
                 console.log(eventTime)
 
-                var eventImage = events[i].images[0].url;
-                console.log(eventImage)
-
                 var eventLink = events[i].url
                 console.log(eventLink)
                 }
-                // Parse the response.
-                // Do other things.
              },
     error: function(xhr, status, err) {
         console.log(err);
