@@ -1,23 +1,24 @@
 {
     "development": {
       "username": "root",
-      "password": "i guess it really is mySQL",
-      "database": "myooz_db",
-      "host": "localhost",
+      "password": "esabatad5",
+      "database": "myooz_database",
+      "host": "127.0.0.1",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
-      "password": "i guess it really is mySQL",
+      "password": null,
       "database": "myooz_db",
-      "host": "localhost",
+      "host": "127.0.0.1",
+
       "dialect": "mysql"
     },
     "production": {
       "username": "root",
-      "password": "i guess it really is mySQL",
+      "password": null,
       "database": "myooz_db",
-      "host": "localhost",
+      "host": "127.0.0.1",
       "dialect": "mysql"
     }
   }  
