@@ -1,0 +1,34 @@
+DROP DATABASE IF EXISTS myoozDB;
+CREATE database myoozDB;
+
+USE myoozDB;
+
+CREATE TABLE users (
+  id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(30) NOT NULL,
+  email VARCHAR(30) NOT NULL,
+  password VARCHAR(30) NOT NULL,
+  bio VARCHAR(250) NULL,
+  genre VARCHAR(250) NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (id) REFERENCES 
+);
+
+CREATE TABLE events (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30) NULL,
+  date VARCHAR(30) NULL,
+  location VARCHAR(30) NULL,
+  genre VARCHAR(30) NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY
+);
+
+CREATE TABLE groups (
+  id INT NOT NULL AUTO_INCREMENT,
+  eventid VARCHAR(30) NOT NULL,
+  members VARCHAR(30) NULL,
+  applicants VARCHAR(30) NULL, 
+  PRIMARY KEY (id),
+  FOREIGN KEY
+);
