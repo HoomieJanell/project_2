@@ -13,13 +13,12 @@ $.ajax({
 
                 for (var i = 0; i < allEvents.length; i++) {                                      
                 var eventName = allEvents[i].name;
-                console.log(eventName);
+                
                 var eventGenre = allEvents[i].classifications[0].genre.name
-                console.log(eventGenre)
+               
                 var eventDate = allEvents[i].dates.start.localDate
-                console.log(eventDate);
+                
                 var eventLink = allEvents[i].url
-                console.log(eventLink);
 
                     info = {
                         event: eventName,
@@ -27,7 +26,7 @@ $.ajax({
                         date: eventDate,
                         ticketlink: eventLink
                     };  
-                    
+                                        
                     $.post("/api/events", info),
                         function(data, status) {
                             console.log(data)
