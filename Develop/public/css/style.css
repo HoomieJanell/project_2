@@ -4,7 +4,15 @@
     margin-top: -10px;
     margin-right: -10px;
     margin-left: -10px;
+<<<<<<< HEAD
     
+=======
+    padding-bottom: 25px;
+}
+
+.cassette {
+    width: 100px;
+>>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
 }
 
 .searchbar {
@@ -28,6 +36,7 @@
 }
 
 .title {
+<<<<<<< HEAD
     text-align: center; 
     margin-bottom: -100px;   
 }
@@ -40,6 +49,14 @@
 
 .my {
     margin-top: -40px;
+=======
+    text-align: center;
+    margin-top: -30px;
+}
+
+.my {
+    margin-top: -55px;
+>>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
     margin-right: 515px;
     font-size: 50px;
 }
@@ -56,10 +73,23 @@
 
 }
 
+<<<<<<< HEAD
 .nav {
     float: right;
     margin-right: 30px;
     margin-top: -80px;
+=======
+.cassette {
+    margin-top: -150px;
+    margin-bottom: 40px;
+    width: 150px;
+}
+
+.nav {
+    float: right;
+    margin-right: 30px;
+    margin-top: -85px;
+>>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
     font-size: 25px;
 }
 
@@ -92,11 +122,19 @@ footer {
     margin-bottom: -50px;
 }
 
+<<<<<<< HEAD
 .emailtext, .passwordtext {
     font-size: 25px;
 }
 
 .emailinput, .passwordinput {
+=======
+.emailtext, .passwordtext, .nametext {
+    font-size: 25px;
+}
+
+.emailinput, .passwordinput, .nameinput {
+>>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
     height: 20px;
 }
 
@@ -106,7 +144,11 @@ footer {
 }
 
 .content {
+<<<<<<< HEAD
     background-image: url('../images/diagonal_striped_brick.png')
+=======
+    background-image: url('../images/diagonal_striped_brick.png');
+>>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
 }
 
 .here {
@@ -115,7 +157,11 @@ footer {
     margin-top: -20px;
     text-decoration: underline;
     margin-bottom: 30px;
+<<<<<<< HEAD
     margin-right: -140px;
+=======
+    margin-right: -145px;
+>>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
 }
 
 .dont {
@@ -134,10 +180,76 @@ footer {
     
 }
 
+<<<<<<< HEAD
 .emailloginwhole {
+=======
+.emailloginwhole, .nameloginwhole {
+>>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
    margin-bottom: 10px;
 }
 
 .passwordloginwhole {
     margin-right: 33px;
+<<<<<<< HEAD
+=======
+}
+
+.profilepic {
+    width: 325px;
+    float: left;
+    margin-left: 60px;
+    border: solid 3px white;
+}
+
+.profilebody {
+    height: 330px;
+    width: 900px;
+    background-color: #949494;
+    margin-left: 250px;
+    padding-top: 20px;
+    
+}
+
+.intro {
+    width: 400px;
+    float: right;
+    margin-top: -20px;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.bottomhalf {
+    height: 450px;
+    width: 900px;
+    background-color: #949494;
+    margin-left: 250px;
+}
+
+.aboutmeandbio {
+    margin-left: 60px;
+    margin-right: 70px;
+    height: 200px;
+}
+
+.grouprequests {
+    margin-left: 160px;
+    float: left;
+    padding-right: 160px;
+
+}
+
+.currentgroups {
+    margin-right: -20px;
+}
+
+button {
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+html {
+    font-family: 'Righteous', cursive, 'Acme', sans-serif;
+>>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
 }
