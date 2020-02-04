@@ -3,7 +3,7 @@
 // console.log(key)
 
 var key = 'fcAeKESHSkTYxwedo5Gf1UAlThGC4Cq6';
-var url = "https://app.ticketmaster.com/discovery/v2/events.json?size=5&apikey="
+var url = "https://app.ticketmaster.com/discovery/v2/events.json?size=20&apikey="
 
   
 
