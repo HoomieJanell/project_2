@@ -20,17 +20,17 @@ $.ajax({
                 
                 var eventLink = allEvents[i].url
 
-                    info = {
+                var info = {
                         event: eventName,
                         genre: eventGenre,
                         date: eventDate,
                         ticketlink: eventLink
                     };  
                                         
-                    $.post("/api/events", info),
+                    $.post("", info),
                         function(data, status) {
                             console.log(data)
-                            console.log(status)
+                            console.log("Status: " + status)
                         }
                 }            
              },
