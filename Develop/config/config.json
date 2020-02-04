@@ -8,14 +8,14 @@
     },
     "test": {
       "username": "root",
-      "password": "",
+      "password": "i guess it really is mySQL",
       "database": "myooz_db",
       "host": "localhost",
       "dialect": "mysql"
     },
     "production": {
       "username": "root",
-      "password": "",
+      "password": "i guess it really is mySQL",
       "database": "myooz_db",
       "host": "localhost",
       "dialect": "mysql"

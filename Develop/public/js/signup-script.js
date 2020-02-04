@@ -18,8 +18,10 @@ $(document).ready(function(){
     function newUser(userData){
         console.log(userData);
         $.post("/api/User", userData)
-            .then(function(){
-                $(document).refresh();
+            .then(function(res, err){
+                if (err) {
+                    $.(doc)
+                }
             });
     }
 })

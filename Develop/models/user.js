@@ -44,7 +44,7 @@ module.exports = function(sequelize, DataTypes) {
   // }, {onDelete: "CASCADE"});
   // groups.belongsToMany(User, {through: 'userGroups'});
   User.associate = models=>{
-  models.User.belongsToMany(models.groups, {through: 'userGroups'})};
+  models.User.belongsToMany(models.groups, {through: 'userGroups', as: 'Members'})};
 
   // var events = sequelize.define("events", {
   //   event: {
