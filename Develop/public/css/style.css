@@ -1,18 +1,14 @@
 .header {
-    background-image: url('wood2.png');
+    background-image: url('../images/wood2.png');
     height: 150px;
     margin-top: -10px;
     margin-right: -10px;
     margin-left: -10px;
-<<<<<<< HEAD
-    
-=======
     padding-bottom: 25px;
 }
 
 .cassette {
     width: 100px;
->>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
 }
 
 .searchbar {
@@ -36,27 +32,12 @@
 }
 
 .title {
-<<<<<<< HEAD
-    text-align: center; 
-    margin-bottom: -100px;   
-}
-
-.cassette {   
-    height: 100px; 
-    
-
-}
-
-.my {
-    margin-top: -40px;
-=======
     text-align: center;
     margin-top: -30px;
 }
 
 .my {
     margin-top: -55px;
->>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
     margin-right: 515px;
     font-size: 50px;
 }
@@ -73,12 +54,6 @@
 
 }
 
-<<<<<<< HEAD
-.nav {
-    float: right;
-    margin-right: 30px;
-    margin-top: -80px;
-=======
 .cassette {
     margin-top: -150px;
     margin-bottom: 40px;
@@ -89,7 +64,6 @@
     float: right;
     margin-right: 30px;
     margin-top: -85px;
->>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
     font-size: 25px;
 }
 
@@ -122,19 +96,11 @@ footer {
     margin-bottom: -50px;
 }
 
-<<<<<<< HEAD
-.emailtext, .passwordtext {
-    font-size: 25px;
-}
-
-.emailinput, .passwordinput {
-=======
 .emailtext, .passwordtext, .nametext {
     font-size: 25px;
 }
 
 .emailinput, .passwordinput, .nameinput {
->>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
     height: 20px;
 }
 
@@ -144,15 +110,7 @@ footer {
 }
 
 .content {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    background-image: url('../images/diagonal_striped_brick.png')
-=======
     background-image: url('../images/diagonal_striped_brick.png');
->>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
-=======
-    background-image: url('diagonal_striped_brick.png');
->>>>>>> master
 }
 
 .here {
@@ -161,11 +119,7 @@ footer {
     margin-top: -20px;
     text-decoration: underline;
     margin-bottom: 30px;
-<<<<<<< HEAD
-    margin-right: -140px;
-=======
     margin-right: -145px;
->>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
 }
 
 .dont {
@@ -184,18 +138,12 @@ footer {
     
 }
 
-<<<<<<< HEAD
-.emailloginwhole {
-=======
 .emailloginwhole, .nameloginwhole {
->>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
    margin-bottom: 10px;
 }
 
 .passwordloginwhole {
     margin-right: 33px;
-<<<<<<< HEAD
-=======
 }
 
 .profilepic {
@@ -255,5 +203,4 @@ button {
 
 html {
     font-family: 'Righteous', cursive, 'Acme', sans-serif;
->>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
 }
