@@ -5,11 +5,12 @@ module.exports = function(app) {
     app.get("api/groups", function(req, res){
         db.groups.findAll({}).then(dbgroups=>{
             res.json(dbgroups);
+            console.log(dbgroups);
         });
     });
 
     //list all groups for selected event
-    app.get("/api/groups/:eventid", function(req, res){
+    app.get("/api/groups/event/:eventid", function(req, res){
         db.groups.findAll({
             where: {
                 eventId: req.params.eventid
@@ -40,8 +41,7 @@ module.exports = function(app) {
     //add user to group
     //BIG NOTE: BELONGSTO IS WEIRD SO I DON'T KNOW IF THIS IS RIGHT OR WHAT
     app.post("/api/groups/:id", function(req, res){
-        db.groups.addUsers([req.params.id, req.body])
-            .then(db.User.addgroups([req.body, req.params.id]))
+        db.groups.addUsers(User, req.params.id)
             .then(dbgroups=>{
                 res.json(dbgroups);
             });

@@ -14,6 +14,16 @@ module.exports = app=>{
         });
     });
 
+    app.get("/api/User/groups/:id", (req, res)=>{
+        db.User.getGroups({
+            where: {
+                UserId: req.params.id
+            }
+        }).then(response=>{
+            console.log(response);
+        });
+    });
+
     // create a new user
     app.post("/api/User", (req,res)=>{
         db.User.create(req.body).then((dbUser)=>{

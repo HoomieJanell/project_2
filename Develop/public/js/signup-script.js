@@ -1,16 +1,23 @@
 $(document).ready(function(){
-    var username = $(".nameloginwhole");
-    var pw = $(".passwordloginwhole");
-    var email = $(".emailloginwhole");
+    var username = $(".nameinput");
+    var pw = $(".passwordinput");
+    var email = $(".emailinput");
+
     $(".submitlogin").on("click", function(){
+        user = username.val().trim();
+        password = pw.val().trim();
+        emails = email.val().trim();
+        
         newUser({
-            username: username.val().trim(),
-            password: pw.val().trim(),
-            email: email.val().trim()
-        })
-    })
+            'username': user,
+            'password': password,
+            'email': emails
+        });
+    });
+
     function newUser(userData){
-        $.post("/api/Users", userData)
+        console.log(userData);
+        $.post("/api/User", userData)
             .then(function(){
                 $(document).refresh();
             });
