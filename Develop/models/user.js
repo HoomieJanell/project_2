@@ -61,5 +61,4 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
   events.hasMany(groups, {as: 'Groups', onDelete: "CASCADE"});
-  return User, events, groups, accData;
 };

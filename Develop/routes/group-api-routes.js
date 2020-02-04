@@ -12,7 +12,7 @@ module.exports = function(app) {
     app.get("/api/groups/:eventid", function(req, res){
         db.groups.findAll({
             where: {
-                eventId: req.params.eventid
+                event_id: req.params.eventid
             }
         }).then(dbgroups=>{
             res.json(dbgroups);
@@ -57,4 +57,17 @@ module.exports = function(app) {
             res.json(dbgroups);
         });
     });
+
+    //delete all groups ("the event is over, remove all its groups")
+    app.delete("api/groups/:eventid", function(req, res){
+        db.groups.destroy({
+            where: {
+                event_id: req.params.eventid
+            }
+        }).then(dbgroups=>{
+            res.json(dbgroups);
+        });
+    });
+
+
 }
