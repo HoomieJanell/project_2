@@ -10,7 +10,7 @@ var events = sequelize.define("events", {
     date: {
       type: DataTypes.STRING
     },
-    imagelink: {
+    ticketlink: {
       type: DataTypes.STRING
     }
   });

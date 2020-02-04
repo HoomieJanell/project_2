@@ -1,5 +1,5 @@
 .header {
-    background-image: url('../images/wood2.png');
+    background-image: url('wood2.png');
     height: 150px;
     margin-top: -10px;
     margin-right: -10px;
@@ -145,10 +145,14 @@ footer {
 
 .content {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-image: url('../images/diagonal_striped_brick.png')
 =======
     background-image: url('../images/diagonal_striped_brick.png');
 >>>>>>> 7cd169344e514159cb17b600f25a8773ff3d3466
+=======
+    background-image: url('diagonal_striped_brick.png');
+>>>>>>> master
 }
 
 .here {
