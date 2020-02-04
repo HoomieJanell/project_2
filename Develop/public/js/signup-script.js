@@ -19,9 +19,9 @@ $(document).ready(function(){
         console.log(userData);
         $.post("/api/User", userData)
             .then(function(res, err){
-                if (err) {
-                    $.(doc)
-                }
+                // if (err) {
+                //     $.(doc)
+                // }
             });
     }
 })

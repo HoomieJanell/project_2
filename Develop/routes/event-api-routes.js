@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app){
 
     //get all events
-    app.get("api/events", function(req,res){
+    app.get("/api/events", function(req,res){
         db.events.findAll({}).then(dbevents=>{
             res.json(dbevents);
         });
@@ -21,7 +21,7 @@ module.exports = function(app){
     });
 
     //add new event
-    app.post("api/events", function(req, res){
+    app.post("/api/events", function(req, res){
         db.events.create(req.body).then(dbevents=>{
             res.json(dbevents);
         });

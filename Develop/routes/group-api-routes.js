@@ -2,7 +2,7 @@ var db = require("../models");
 
 module.exports = function(app) {
     //list all groups for all events
-    app.get("api/groups", function(req, res){
+    app.get("/api/groups", function(req, res){
         db.groups.findAll({}).then(dbgroups=>{
             res.json(dbgroups);
             console.log(dbgroups);
