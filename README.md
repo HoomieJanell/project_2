@@ -16,4 +16,5 @@ Technologies used:
 * MySQL, Sequelize
 * Heroku
 * Ticketmaster API
+* GET & POST routes
 
