@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app){
     
     //create a user's profile data
-    app.post("api/account", function(req, res){
+    app.post("/api/account", function(req, res){
         db.accData.create(req.body).then(function(dbaccount){
             res.json(dbaccount);
         });
