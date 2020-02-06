@@ -13,8 +13,11 @@ app.use(express.static("public"));
 
 
 // Routes
-// require("./routes/api-routes")(app);
-// require("./routes/html-routes")(app);
+require("./routes/account-api-routes")(app);
+require("./routes/event-api-routes")(app);
+require("./routes/group-api-routes")(app);
+require("./routes/user-api-routes")(app);
+require("./routes/html-routes")(app);
 
 var syncOptions = { force: false };
 
