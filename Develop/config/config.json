@@ -1,7 +1,7 @@
 {
     "development": {
       "username": "root",
-      "password": "Guernica4*",
+      "password": "Wheeloftime2020",
       "database": "myooz_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
