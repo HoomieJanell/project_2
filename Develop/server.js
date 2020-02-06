@@ -13,11 +13,12 @@ app.use(express.static("public"));
 
 
 // Routes
-require("./routes/account-api-routes")(app);
-require("./routes/event-api-routes")(app);
-require("./routes/group-api-routes")(app);
-require("./routes/user-api-routes")(app);
-require("./routes/html-routes")(app);
+require("./routes/account-api-routes.js")(app);
+require("./routes/event-api-routes.js")(app);
+require("./routes/group-api-routes.js")(app);
+require("./routes/user-api-routes.js")(app);
+require("./routes/html-routes copy.js")(app);
+require("./routes/api-routes.js")(app);
 
 var syncOptions = { force: false };
 

@@ -1,14 +1,14 @@
 {
     "development": {
       "username": "root",
-      "password": "Guernica4*",
+      "password": "",
       "database": "myooz_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
-      "password": null,
+      "password": "",
       "database": "myooz_db",
       "host": "127.0.0.1",
 
@@ -16,7 +16,7 @@
     },
     "production": {
       "username": "root",
-      "password": null,
+      "password": "",
       "database": "myooz_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
