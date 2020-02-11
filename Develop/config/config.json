@@ -1,17 +1,19 @@
 {
-    "development": {
-      "username": "root",
-      "password": "Guernica4*",
-      "database": "myooz_db",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-    },
-    "test": {
-      "username": "root",
-      "password": null,
-      "database": "myooz_db",
-      "host": "127.0.0.1",
+  "development": {
+    "username": "root",
+    "password": "Guernica4*",
+    "database": "myooz_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "database": "myooz_db",
+    "host": "127.0.0.1",
 
+<<<<<<< HEAD
       "dialect": "mysql"
     },
     "production": {
@@ -19,3 +21,16 @@
       "dialect": "mysql"
     }
   }  
+=======
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "database": "myooz_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}  
+>>>>>>> ca94b02e2675df3852d397c4f43759fbbd8f8a86
