@@ -8,29 +8,15 @@
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
+    "password": "Guernica4*",
     "database": "myooz_db",
     "host": "127.0.0.1",
-
-<<<<<<< HEAD
-      "dialect": "mysql"
+    "dialect": "mysql"
     },
     "production": {
       "use_env_variable": "JAWSDB_URL",
       "dialect": "mysql"
     }
-  }  
-=======
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "database": "myooz_db",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}  
->>>>>>> ca94b02e2675df3852d397c4f43759fbbd8f8a86
+}
+
+  
