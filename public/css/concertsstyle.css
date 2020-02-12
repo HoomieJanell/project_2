@@ -1,7 +1,7 @@
 .bg-img {
     background-image: url('./images/wood2.png');
     height: 100%;
-    width: 100%;
+    
 }
 
 .cont-marg {
@@ -25,14 +25,7 @@ footer {
     padding-top: 15px;
 }
 
-.header {
-    background-image: url('./images/wood2.png');
-    height: 180px;
-    margin-top: -5px;
-    margin-right: -10px;
-    margin-left: -10px;
-    padding-bottom: 50px;
-}
+
 
 .cassette {
     width: 100px;
@@ -147,12 +140,10 @@ body {
     background-color: #949494;
     padding-bottom: 20px;
     width: 800px;
+    margin: 0 auto;
 }
 
-#rightside {
-    margin-right: -75px;
-    margin-left: 40px;
-}
+
 
 .fullpage {
     font-family: 'Righteous', cursive, 'Acme', sans-serif;
