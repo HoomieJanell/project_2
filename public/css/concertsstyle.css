@@ -5,7 +5,7 @@
 }
 
 .cont-marg {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 div.nav-wrapper.bg-img {
@@ -36,6 +36,7 @@ footer {
 
 .cassette {
     width: 100px;
+    margin-top: 7px;
 }
 
 #searchbar {
@@ -75,10 +76,24 @@ footer {
     margin-top: -30px;
 }
 
-.my {
-    margin-top: -50px;
-    margin-right: 518px;
+h1.brand-logo.center.my {
+    padding-top: 0px;
+    padding-right: 230px;
     font-size: 55px;
+    margin-top: 14px;
+}
+
+h1.brand-logo.center.z {
+    padding-top: 0px;
+    padding-left: 185px;
+    font-size: 55px;
+    margin-top: 14px;
+}
+
+.my {
+    padding-top: 50px;
+    padding-right: 200px;
+    
 }
 
 #my {
@@ -86,14 +101,14 @@ footer {
 }
 
 .z {
-    margin-left: -30px;
+    /* margin-left: -30px;
     margin-top: -140px;
     font-size: 55px;
-    margin-right: 105px;
+    margin-right: 105px; */
 }
 
 .cassette {
-    margin-top: -150px;
+    margin-top: 7;
     margin-bottom: 40px;
     width: 150px;
 }
