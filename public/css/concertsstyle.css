@@ -1,3 +1,21 @@
+.bg-img {
+    background-image: url('./images/wood2.png');
+    height: 100%;
+    width: 100%;
+}
+
+.cont-marg {
+    margin-bottom: 60px;
+}
+
+div.nav-wrapper.bg-img {
+    height: 120px;
+}
+
+
+
+
+
 footer {
     width: 100.7%;
     text-align: center;
@@ -21,30 +39,36 @@ footer {
 }
 
 #searchbar {
-    margin-top: 85px;
-    margin-left: 37px;
+    /* margin-top: 85px; */
+    margin-left: 35px; 
     width: 250px;
     height: 23px;
-    float: left;
+    /* float: left; */
     border-radius: 25px;
     background-color: white;
     color: black;
     border: white 1px solid;
-  
+    margin-top: 45px;
 }
 
 .searchbutton {
-    margin-top: 87px;
-    margin-left: 30px;
+    /* margin-top: 87px; */ 
+    margin-left: 25px; 
     width: 75px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     height: 25px;
     background-color: black;
     color: white;
     border-radius: 25px;
     font-size: 12px;
-    padding: 5px;
+    /* padding: 5px; */
 }
+
+.search {
+    display: inline;
+}
+
+
 
 .title {
     text-align: center;
@@ -74,20 +98,37 @@ footer {
     width: 150px;
 }
 
-.navbar {
+.nav-border {
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-style: solid;
+    border-right-width: 1px;
+}
+
+.nav-border-two {
+    margin-top: 50px;
+    line-height: 23px;
+}
+
+/* .navbar {
     float: right;
     margin-right: 40px;
     margin-top: -80px;
     font-size: 25px;
     color: white;
     text-decoration: none;
-}
+} */
 
 body {
     background-image: url('./images/diagonal_striped_brick.png');
 }
 
-.container {
+/* .container {
+    
+} */
+
+.content {
     background-color: #949494;
     padding-bottom: 20px;
     width: 800px;
