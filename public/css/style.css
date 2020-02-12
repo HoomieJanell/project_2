@@ -11,25 +11,7 @@
     width: 100px;
 }
 
-.searchbar {
-    margin-top: 80px;
-    margin-left: 30px;
-    width: 250px;
-    height: 20px;
-    float: left;
-    border-radius: 25px;
-}
 
-.searchbutton {
-    margin-top: 80px;
-    margin-left: 30px;
-    width: 75px;
-    margin-left: 5px;
-    height: 27px;
-    background-color: black;
-    color: white;
-    border-radius: 25px;
-}
 
 .title {
     text-align: center;
@@ -46,13 +28,7 @@
     margin-bottom: 60px;
 }
 
-.z {
-    margin-left: -30px;
-    margin-top: -140px;
-    font-size: 50px;
-    margin-right: 98px;
 
-}
 
 .cassette {
     margin-top: -150px;
@@ -78,18 +54,43 @@ footer {
     background-color: black;
     color: white;
     height: 80px;
-    padding-right: 20px;
-    margin-left: -10px;
-    padding-top: 25px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+    
+    padding-top: 15px;
 }
 
+/* body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  } */
+
+  main {
+    flex: 1 0 auto;
+  }
+
 .container {
-    width: 500px;
-    height: 465px;
+    
+    
     text-align: center;
+    
+    
+    
+}
+
+.grid-color {
+    background-color: white;
+}
+
+
+
+form {
+    /* margin: 0 auto;
+    text-align: center; */
     background-color: #949494;
-    margin-left: 450px;
-    padding-top: 20px;
 }
 
 .copyright {
@@ -105,8 +106,7 @@ footer {
 }
 
 .login {
-    margin-bottom: 55px;
-    margin-top: 30px;
+    
 }
 
 .content {
@@ -116,18 +116,18 @@ footer {
 .here {
     color: black;
     font-size: 25px;
-    margin-top: -20px;
+   
     text-decoration: underline;
-    margin-bottom: 30px;
-    margin-right: -145px;
+    
 }
+
 
 .dont {
     margin-bottom: -30px;
 }
 
 .loginbelow {
-    margin-top: -30px;
+    
 }
 
 .submitlogin {
@@ -139,11 +139,11 @@ footer {
 }
 
 .emailloginwhole, .nameloginwhole {
-   margin-bottom: 10px;
+  
 }
 
 .passwordloginwhole {
-    margin-right: 33px;
+    
 }
 
 .profilepic {
@@ -176,7 +176,7 @@ footer {
     height: 450px;
     width: 900px;
     background-color: #949494;
-    margin-left: 250px;
+    
 }
 
 .aboutmeandbio {
@@ -203,4 +203,110 @@ button {
 
 html {
     font-family: 'Righteous', cursive, 'Acme', sans-serif;
+}
+
+.bg-img {
+    background-image: url('./images/wood2.png');
+    height: 100%;
+    
+}
+
+.cont-marg {
+    margin-bottom: 150px;
+}
+
+.cont-marg-two {
+    margin-bottom: 105px;
+}
+
+div.nav-wrapper.bg-img {
+    height: 120px;
+}
+
+.cassette {
+    width: 100px;
+    margin-top: 7px;
+}
+
+#searchbar {
+    /* margin-top: 85px; */
+    margin-left: 35px; 
+    width: 250px;
+    height: 23px;
+    /* float: left; */
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    border: white 1px solid;
+    margin-top: 45px;
+}
+
+.searchbutton {
+    /* margin-top: 87px; */ 
+    margin-left: 25px; 
+    width: 75px;
+    /* margin-left: 5px; */
+    height: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-size: 12px;
+    /* padding: 5px; */
+}
+
+.search {
+    display: inline;
+}
+
+
+
+.title {
+    text-align: center;
+    margin-top: -30px;
+}
+
+h1.brand-logo.center.my {
+    padding-top: 0px;
+    padding-right: 230px;
+    font-size: 55px;
+    margin-top: 14px;
+}
+
+h1.brand-logo.center.z {
+    padding-top: 0px;
+    padding-left: 185px;
+    font-size: 55px;
+    margin-top: 14px;
+}
+
+.my {
+    padding-top: 50px;
+    padding-right: 200px;
+    
+}
+
+#my {
+    margin-bottom: 60px;
+}
+.fullpage {
+    font-family: 'Righteous', cursive, 'Acme', sans-serif;
+}
+
+.cassette {
+    margin-top: 7;
+    margin-bottom: 40px;
+    width: 150px;
+}
+
+.nav-border {
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-style: solid;
+    border-right-width: 1px;
+}
+
+.nav-border-two {
+    margin-top: 50px;
+    line-height: 23px;
 }
