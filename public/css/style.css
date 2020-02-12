@@ -62,11 +62,11 @@ footer {
     padding-top: 15px;
 }
 
-body {
+/* body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+  } */
 
   main {
     flex: 1 0 auto;
@@ -213,6 +213,10 @@ html {
 
 .cont-marg {
     margin-bottom: 150px;
+}
+
+.cont-marg-two {
+    margin-bottom: 105px;
 }
 
 div.nav-wrapper.bg-img {
