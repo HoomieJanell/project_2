@@ -54,12 +54,30 @@ footer {
     background-color: black;
     color: white;
     height: 80px;
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
+    margin: 0 auto;
     
     
     padding-top: 15px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    /* margin-bottom: -100px; */
+  }
+
+.footer,
+.push {
+  height: 75px;
 }
 
 /* body {
