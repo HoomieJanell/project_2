@@ -101,6 +101,7 @@ html, body {
 
 .grid-color {
     background-color: white;
+    color: white;
 }
 
 
@@ -327,4 +328,16 @@ h1.brand-logo.center.z {
 .nav-border-two {
     margin-top: 50px;
     line-height: 23px;
+}
+
+.account {
+    background-color: #949494;
+}
+
+div.row.gap {
+    margin-bottom: 0;
+}
+
+.p-pic {
+    padding-top: 30px;
 }
