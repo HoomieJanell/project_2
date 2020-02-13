@@ -337,3 +337,7 @@ h1.brand-logo.center.z {
 div.row.gap {
     margin-bottom: 0;
 }
+
+.p-pic {
+    padding-top: 30px;
+}
