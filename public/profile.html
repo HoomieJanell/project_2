@@ -1,40 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="fullpage" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme|Righteous&display=swap" rel="stylesheet">
     <title>Myooz</title>
 
 </head>
 
-<body class="content">
+<body>
     <div class="wrapper">
-        <header class="header">
-            <div class="search">
+        <div class="container-fluid cont-marg">
+            <div class="navbar-fixed">
+                <nav>
+                  <div class="nav-wrapper bg-img">
+                    <div class="search hide-on-med-and-down">
+                        <input type=text placeholder="  Search for Concerts" class="searchbar" id="searchbar">
+                        <button type=button class="searchbutton" id="searchbutton">Search</button>
+                    </div>
+                    
+                    <h1 class="brand-logo center my"><strong style="color: black;">My</strong></h1><img class="cassette brand-logo center" src="css/images/cassette.png"><h1 class="brand-logo center z"><strong style="color: black;">z</strong></h1>
+                    
+                
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down nav-border-two">
+                      <li ><a class="nav-border" style="color: white;" href="index.html">Home</a></li>
+                      <li ><a class="nav-border" style="color: white;" href="profile.html">My Profile</a></li>
+                      <li ><a style="color: white;" href="concerts.html">Concerts</a></li>
+                    </ul>
+                
+                  </div>
+                </nav>
+              </div>
+            </div>
+        
+        <!-- Mobile Navbar -->
+          <ul class="sidenav" id="mobile-demo">
+            <li><a style="color: black;" href="index.html">Home</a></li>
+            <li><a style="color: black;" href="profile.html">My Profile</a></li>
+            <li><a style="color: black;" href="concerts.html">Concerts</a></li>
+            <li>
                 <input type=text placeholder="  Search for Concerts" class="searchbar" id="searchbar">
                 <button type=button class="searchbutton" id="searchbutton">Search</button>
+            </li>
+          </ul>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s4 account">
+                        <img  src="./css/images/profile-placeholder.png">
+                    </div>
+                    <div class="col s4 account">
+                        <p><strong>Location: </strong>Austin, TX</p>
+                        <div class="row gap">
+                            <div class="col s12">
+                                <p><strong>Age: </strong>22</p>
+                            </div>
+                        </div>
+                        <div class="row gap">
+                            <div class="col s12">
+                                <p><strong>Birthday: </strong>October 21st</p>
+                            </div>
+                        </div>
+                        <div class="row gap">
+                            <div class="col s12">
+                                <p><strong>Gender: </strong>Female</p>
+                            </div>
+                        </div>
+                        <div class="row gap">
+                            <div class="col s12">
+                                <p><strong>Job: </strong> Business Development Representative</p>
+                            </div>
+                        </div>
+                        <div class="row gap">
+                            <div class="col s12">
+                                <p><strong>Relationship Status: </strong>In a Relationship</p>
+                            </div>
+                        </div>
+                        <div class="row gap">
+                            <div class="col s12">
+                                <p><strong>Interests: </strong>Tennis, music, & coding</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col s2"></div>
+                </div>
             </div>
-
-            <div class="title">
-                <h1 id="my" class="my">My</h1>
-                <img class="cassette" src="./css/mycasette.png">
-                <h1 class="z">z</h1>
-            </div>
-
-            <nav class="nav">
-
-                <a href="index.html">Home | </a>
-                <a href="profile.html">My Profile |</a>
-                <a href="concerts.html">Concerts</a>
-
-
-            </nav>
-        </header>
-        <div class="profilebody">
+        </div>
+    </div>
+        <!-- <div class="profilebody">
             <img class="profilepic" src="./css/images/profile-placeholder.png">
             <div class="intro">
 
@@ -74,18 +137,25 @@
                 <p>Group 3</p>
                 <p>Group 4</p>
             </div>
-        </div>
-
-        <footer class="footer">
-            <p class="copyright">Copyright &copy; 2020</p>
-
-        </footer>
+        </div> -->
+        <!-- Footer -->
+        <div class="push"></div>
     </div>
+    <footer class="footer">
+        <p class="copyright">Copyright &copy; 2020</p>
+
+    </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./js/index-script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../api/api.js"></script>
+    <script>$(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+          </script>
 
 
 </body>
