@@ -15,6 +15,6 @@ var events = sequelize.define("events", {
     }
   });
   events.associate = models => {
-      models.events.hasMany(models.groups, {as: 'Groups', onDelete: "CASCADE"})};
+      models.events.hasMany(models.Group, {as: 'Groups', onDelete: "CASCADE"})};
   return events;
 }

@@ -1,73 +1,25 @@
 var db = require("../models");
 
 module.exports = function(app) {
-    //list all groups for all events
-    app.get("/api/groups", function(req, res){
-        db.groups.findAll({}).then(dbgroups=>{
-            res.json(dbgroups);
-            console.log(dbgroups);
-        });
+
+app.get("/api/groups", function(req, res) {
+    // Here we add an "include" property to our options in our findAll query
+    // We set the value to an array of the models we want to include in a left outer join
+    // In this case, just db.Post
+    db.Group.findAll({
+      include: [db.User]
+    }).then(function(dbGroup) {
+      res.json(dbGroup);
     });
+  });
 
-    //list all groups for selected event
-    app.get("/api/groups/event/:eventid", function(req, res){
-        db.groups.findAll({
-            where: {
-                event_id: req.params.eventid
-            }
-        }).then(dbgroups=>{
-            res.json(dbgroups);
-        });
+
+
+
+app.post("/api/groups", function(req, res) {
+    db.Group.create(req.body).then(function(dbGroup) {
+      res.json(dbGroup);
     });
+  });
 
-    //get specific group
-    app.get("/api/groups/:id", function(req, res){
-        db.groups.findOne({
-            where: {
-                id: req.params.id
-            }
-        }).then(dbgroups=>{
-            res.json(dbgroups);
-        });
-    });
-
-    //make a new group
-    app.post("/api/groups", function(req, res){
-        db.groups.create(req.body).then(dbgroups=>{
-            res.json(dbgroups);
-        });
-    });
-
-    //add user to group
-    //BIG NOTE: BELONGSTO IS WEIRD SO I DON'T KNOW IF THIS IS RIGHT OR WHAT
-    app.post("/api/groups/:id", function(req, res){
-        db.groups.addMember('Users', {groupId: req.params.id, UserId: req.body.UserId})
-            .then(dbgroups=>{
-                res.json(dbgroups);
-            });
-    });
-
-    //delete selected group ("I want to delete my group")
-    app.delete("/api/groups/:id", function(req, res){
-        db.groups.destroy({
-            where: {
-                id: req.params.id
-            }
-        }).then(dbgroups=>{
-            res.json(dbgroups);
-        });
-    });
-
-    //delete all groups ("the event is over, remove all its groups")
-    app.delete("api/groups/:eventid", function(req, res){
-        db.groups.destroy({
-            where: {
-                event_id: req.params.eventid
-            }
-        }).then(dbgroups=>{
-            res.json(dbgroups);
-        });
-    });
-
-
-}
+};
