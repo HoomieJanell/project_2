@@ -1,22 +1,26 @@
 {
   "development": {
-    "username": "root",
-    "password": "Guernica4*",
-    "database": "myooz_db",
-    "host": "127.0.0.1",
+    "username": "eq4a6kmixu2oj7m9",
+    "password": "jtlux6elihzajiz5",
+    "database": "rku1bi60263arhke",
+    "host": "blonze2d5mrbmcgf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "Guernica4*",
-    "database": "myooz_db",
-    "host": "127.0.0.1",
+    "username": "eq4a6kmixu2oj7m9",
+    "password": "jtlux6elihzajiz5",
+    "database": "rku1bi60263arhke",
+    "host": "blonze2d5mrbmcgf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+
     "dialect": "mysql"
-    },
-    "production": {
-      "use_env_variable": "JAWSDB_URL",
-      "dialect": "mysql"
-    }
-}
+  },
+  "production": {
+    "username": "eq4a6kmixu2oj7m9",
+    "password": "jtlux6elihzajiz5",
+    "database": "rku1bi60263arhke",
+    "host": "blonze2d5mrbmcgf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}  
 
   
