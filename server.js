@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
-
+require("./routes/html-routes.js")(app);
 // Routes
 // require("./routes/account-api-routes")(app);
 // require("./routes/event-api-routes")(app);
