@@ -12,10 +12,6 @@ div.nav-wrapper.bg-img {
     height: 120px;
 }
 
-
-
-
-
 footer {
     width: 100.7%;
     text-align: center;
@@ -25,7 +21,6 @@ footer {
     padding-top: 15px;
     margin-top: 15px;
 }
-
 
 
 .cassette {
@@ -47,16 +42,13 @@ footer {
 }
 
 .searchbutton {
-    /* margin-top: 87px; */ 
-    margin-left: 25px; 
+    margin-left: 10px; 
     width: 75px;
-    /* margin-left: 5px; */
     height: 25px;
     background-color: black;
     color: white;
     border-radius: 25px;
     font-size: 12px;
-    /* padding: 5px; */
 }
 
 .search {
