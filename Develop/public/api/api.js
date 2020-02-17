@@ -34,9 +34,7 @@ $.ajax({
                         <li>
                             <a href="${eventLink}">Grab a Ticket</a>
                         </li>
-                        <li>
-                            <a href="concert-group.html">Join a Group</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -49,6 +47,10 @@ $.ajax({
         console.log(err);
     }
 });
+
+{/* <li>
+                            <a href="concert-group.html">Join a Group</a>
+                        </li> */}
  
       
   
