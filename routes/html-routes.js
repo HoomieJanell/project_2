@@ -25,4 +25,8 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/author-manager.html"));
   });
 
+  app.get("/cms", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  });
+
 };
