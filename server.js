@@ -11,12 +11,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
-
 // Routes
+require("./routes/html-routes.js")(app);
+
 // require("./routes/account-api-routes")(app);
 // require("./routes/event-api-routes")(app);
-// require("./routes/group-api-routes")(app);
-// require("./routes/user-api-routes")(app);
+require("./routes/group-api-routes")(app);
+require("./routes/user-api-routes")(app);
 // require("./routes/html-routes")(app);
 
 var syncOptions = { force: false };

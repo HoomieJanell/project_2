@@ -1,44 +1,44 @@
 var db = require("../models");
 
-module.exports = app=>{
+module.exports = function(app) {
 
-    //get the user/pw of the given id, though I don't think
-    //this is quite how it's gonna want to be written in the end
-    app.get("/api/User/:username", (req, res)=>{
+    app.get("/api/users", function(req, res) {
+        var query = {};
+        if (req.query.group_id) {
+          query.GroupId = req.query.group_id;
+        }
+        // Here we add an "include" property to our options in our findAll query
+        // We set the value to an array of the models we want to include in a left outer join
+        // In this case, just db.Group
+        db.User.findAll({
+          where: query,
+          include: [db.Group]
+        }).then(function(dbUser) {
+          res.json(dbUser);
+        });
+      });
+
+
+      app.get("/api/users/:id", function(req, res) {
+        // Here we add an "include" property to our options in our findOne query
+        // We set the value to an array of the models we want to include in a left outer join
+        // In this case, just db.Group
         db.User.findOne({
-            where: {
-                username: req.params.username
-            }
-        }).then(dbUser=>{
-            res.json(dbUser);
+          where: {
+            id: req.params.id
+          },
+          include: [db.Group]
+        }).then(function(dbUser) {
+          res.json(dbUser);
         });
-    });
+      });
 
-    app.get("/api/User/groups/:id", (req, res)=>{
-        db.User.getGroups({
-            where: {
-                UserId: req.params.id
-            }
-        }).then(response=>{
-            console.log(response);
-        });
-    });
 
-    // create a new user
-    app.post("/api/User", (req,res)=>{
-        db.User.create(req.body).then((dbUser)=>{
-            res.json(dbUser);
-        });
-    });
 
-    // delete a user account, not sure how much use this'll get though.
-    app.delete("/api/User/:id", (req, res)=>{
-        db.User.destroy({
-            where: {
-                id: req.params.id
-            }
-        }).then((dbUser)=>{
-            res.json(dbUser);
-        })
-    })
-}
+    // POST route for saving a new user
+  app.post("/api/users", function(req, res) {
+    db.User.create(req.body).then(function(dbUser) {
+      res.json(dbUser);
+    });
+  });
+};

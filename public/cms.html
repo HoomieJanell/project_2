@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="fullpage">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="./css/concertsstyle.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Myooz</title>
+
+	<link href="./css/cms.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme|Righteous&display=swap" rel="stylesheet">
-    
-    <title>Myooz</title>
-    
 </head>
 
 <body>
-  <div class="wrapper">
+    <div class="wrapper">
     <div class="container-fluid cont-marg">
         <div class="navbar-fixed">
             <nav>
@@ -51,83 +48,53 @@
         </li>
       </ul>
 
- 
-    
-    <!-- Concert/Groups Content -->
-
-    <div class="container content" id="eventscards">
-        <div class="row">
-            loading...
-        
-            
-        </div>
-    </div>
-    </div>
-    </div>
-
-
-
-    <!-- View Groups -->
-    <div class="row">
-			<div class="col s8 offset-s2">
-				<div class="group-container">
-					<h1>Groups</h1>
-					<table class="table table-striped">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th># of Users</th>
-								<th>See Group's Users</th>
-								<th>New User</th>
-								<th>Delete Group</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr id="form-row">
-								<form id="group-form">
-									<td colspan="4">
-										<input placeholder="Enter a name" id="group-name" type="text" />
-									</td>
-									<td><button type="submit" class="btn btn-success">Create Group</button>
-									</td>
-								</form>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+	<div class="container hidden">
+		
+		<div class="row">
+			<div class="col s6 offset-s3">
+				<form id="cms">
+					<div class="form-group">
+						<label for="title">Title:</label>
+						<input placeholder="Post Title" type="text" class="form-control" id="title">
+						<br />
+						<label for="body">Body:</label>
+						<textarea placeholder="Post Body" class="form-control" rows="10" id="body"></textarea>
+						<div class="form-group">
+							<label for="category">Select Group:</label>
+							<select id="author">
+  						</select>
+						</div>
+						<br />
+						<button type="submit" class="btn btn-success submit">Submit</button>
+					</div>
+				</form>
 			</div>
 		</div>
-    
-    
+    </div>
 
-
-
-
-    <!--  <h4>Date</h4>
-                            <h5>Time</h5>
-                            <br>
-                            <h4>Venue</h4>
-                            <h5>Street Address</h5>
-                            <h5>City, State</h5>
-                            <br>
-                            <a href="">Tickets Link</a>-->
     <!-- Footer -->
-    <footer class="footer">
-        <p class="copyright">Copyright &copy; 2020</p>
+    <div class="push"></div>
+</div>
+<footer class="footer">
+    <p class="copyright">Copyright &copy; 2020</p>
 
-    </footer>
-    
+</footer>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../api/api.js"></script>
-    <script src="js/group.js" type="text/javascript"></script>
+    <script src="js/cms.js" type="text/javascript"></script>
     <script>$(document).ready(function(){
         $('.sidenav').sidenav();
       });
           </script>
-    
+	
+	
+
 </body>
 
 </html>

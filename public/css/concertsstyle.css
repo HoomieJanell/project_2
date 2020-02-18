@@ -26,6 +26,11 @@ footer {
     margin-top: 15px;
 }
 
+.footer,
+.push {
+  height: 75px;
+}
+
 
 
 .cassette {
