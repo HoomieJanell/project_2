@@ -168,3 +168,18 @@ footer {
     padding-right: 10px;
     padding-left: 10px;
 }
+
+.content {
+    background-color: #949494;
+    padding-bottom: 20px;
+    border: 1px solid black;
+}
+
+.group-container {
+    background-color: #949494;
+    border: 1px solid black;
+    margin-top: 20px;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
