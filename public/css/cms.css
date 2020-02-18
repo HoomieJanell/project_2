@@ -1,0 +1,339 @@
+.header {
+    background-image: url('../css/images/wood2.png');
+    height: 150px;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    padding-bottom: 25px;
+}
+
+.cassette {
+    width: 100px;
+}
+
+
+
+.title {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.my {
+    margin-top: -55px;
+    margin-right: 515px;
+    font-size: 50px;
+}
+
+#my {
+    margin-bottom: 60px;
+}
+
+
+
+.cassette {
+    margin-top: -150px;
+    margin-bottom: 40px;
+    width: 150px;
+}
+
+.nav {
+    float: right;
+    margin-right: 30px;
+    margin-top: -85px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 80px;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    
+    
+    padding-top: 15px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    /* margin-bottom: -100px; */
+  }
+
+.footer,
+.push {
+  height: 75px;
+}
+
+/* body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  } */
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.container {
+    
+    
+    text-align: center;
+    
+    
+    
+}
+
+.grid-color {
+    background-color: white;
+    color: white;
+}
+
+
+
+
+
+.copyright {
+    margin-bottom: -50px;
+}
+
+.emailtext, .passwordtext, .nametext {
+    font-size: 25px;
+}
+
+.emailinput, .passwordinput, .nameinput {
+    height: 20px;
+}
+
+.login {
+    
+}
+
+.content {
+    background-image: url('../css/images/diagonal_striped_brick.png');
+}
+
+.here {
+    color: black;
+    font-size: 25px;
+   
+    text-decoration: underline;
+    
+}
+
+
+.dont {
+    margin-bottom: -30px;
+}
+
+.loginbelow {
+    
+}
+
+.submitlogin {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    height: 20px;
+    
+}
+
+.emailloginwhole, .nameloginwhole {
+  
+}
+
+.passwordloginwhole {
+    
+}
+
+.profilepic {
+    width: 325px;
+    float: left;
+    margin-left: 60px;
+    border: solid 3px white;
+}
+
+.profilebody {
+    height: 330px;
+    width: 900px;
+    background-color: #949494;
+    margin-left: 250px;
+    padding-top: 20px;
+    
+}
+
+.intro {
+    width: 400px;
+    float: right;
+    margin-top: -20px;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.bottomhalf {
+    height: 450px;
+    width: 900px;
+    background-color: #949494;
+    
+}
+
+.aboutmeandbio {
+    margin-left: 60px;
+    margin-right: 70px;
+    height: 200px;
+}
+
+.grouprequests {
+    margin-left: 160px;
+    float: left;
+    padding-right: 160px;
+
+}
+
+.currentgroups {
+    margin-right: -20px;
+}
+
+button {
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+html {
+    font-family: 'Righteous', cursive, 'Acme', sans-serif;
+}
+
+.bg-img {
+    background-image: url('./images/wood2.png');
+    height: 100%;
+    
+}
+
+.cont-marg {
+    margin-bottom: 150px;
+}
+
+.cont-marg-two {
+    margin-bottom: 105px;
+}
+
+div.nav-wrapper.bg-img {
+    height: 120px;
+}
+
+.cassette {
+    width: 100px;
+    margin-top: 7px;
+}
+
+#searchbar {
+    /* margin-top: 85px; */
+    margin-left: 35px; 
+    width: 250px;
+    height: 23px;
+    /* float: left; */
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    border: white 1px solid;
+    margin-top: 45px;
+}
+
+.searchbutton {
+    /* margin-top: 87px; */ 
+    margin-left: 25px; 
+    width: 75px;
+    /* margin-left: 5px; */
+    height: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-size: 12px;
+    /* padding: 5px; */
+}
+
+.search {
+    display: inline;
+}
+
+
+
+.title {
+    text-align: center;
+    margin-top: -30px;
+}
+
+h1.brand-logo.center.my {
+    padding-top: 0px;
+    padding-right: 230px;
+    font-size: 55px;
+    margin-top: 14px;
+}
+
+h1.brand-logo.center.z {
+    padding-top: 0px;
+    padding-left: 185px;
+    font-size: 55px;
+    margin-top: 14px;
+}
+
+.my {
+    padding-top: 50px;
+    padding-right: 200px;
+    
+}
+
+#my {
+    margin-bottom: 60px;
+}
+.fullpage {
+    font-family: 'Righteous', cursive, 'Acme', sans-serif;
+}
+
+.cassette {
+    margin-top: 7;
+    margin-bottom: 40px;
+    width: 150px;
+}
+
+.nav-border {
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-style: solid;
+    border-right-width: 1px;
+}
+
+.nav-border-two {
+    margin-top: 50px;
+    line-height: 23px;
+}
+
+.account {
+    background-color: #949494;
+}
+
+div.row.gap {
+    margin-bottom: 0;
+}
+
+.p-pic {
+    padding-top: 30px;
+}
